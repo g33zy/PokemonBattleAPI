@@ -1,60 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Pokemon</title>
-</head>
-<body>
+  </head>
+  <header>
+   
+      <img class="logo" src="pok-mon-go-logo-png-30.png" alt="">
+  
+  </header>
+  <body>
     <main>
-        <div class="pokemon-card1" id="pokemon-details1">
-
+      <div class="poke-container">
+          <div class="pokemon-card1" id="pokemon-details1">
             <button onclick="getUser()">Pokemon 1</button>
-
-            <ul id="first-pokemon">
-                
-
-
-
-
-            </ul>
-
-
-
-        </div>
-
-        <div><button onclick="battleFunction()">Battle</button> VS</div>
-
-        <div class="pokemon-card2" id="pokemon-details2">
-
+            <ul id="first-pokemon"></ul>
+          </div>
+          <div><button onclick="battleFunction()">Battle</button></div>
+          <div class="pokemon-card2" id="pokemon-details2">
             <button onclick="getUser2()">Pokemon 2</button>
+            <ul id="second-pokemon"></ul>
+          </div>
+      </div>
 
-            <ul id="second-pokemon">
-              
-
-
-
-
-            </ul>
-
-
-
-        </div>
-
-        <div id="results">
-
-        </div>
-
-
-
-
+      <div id="results"></div>
     </main>
     
 
-
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
+  <footer>
+    <button onclick="reset()">Reset</button>
+  </footer>
 </html>
